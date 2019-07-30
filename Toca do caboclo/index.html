@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<title> Toca do Caboclo </title>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<script type="text/javascript" href="js/slick.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>	
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>		
+	<script type="text/javascript" href="js/materialize.min.js"></script> 
+	<script type="text/javascript" href="js/js.js"></script> 
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="
+	sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+</head>
+<body>
+	<section class="sobre">
+		<div>
+
+			<img class="imagemsobre" src="img/sobrenosfoto.jpeg">
+			<div class="sobregrid">
+				<div></div>
+				<div class="sobreescrito">
+					<p id="sntitulo">Sobre Nós</p>
+					<p id="sndescricao">Mussum ipsum cacilds, vidis litro abertis. Consetis adipiscings elitis. 
+						Pra lá , depois divoltis porris, paradis. Paisis, filhis, espiritis santis. 
+						amistosis quis leo. Manduma pindureta quium dia nois paga. Sapien in monti palavris qui num 
+					significa nadis i pareci latim. Interessantiss quisso pudia ce receita de bolis, mais bolis eu num gostis. </p>
+				</div>
+				
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="especialidades">
+			<p id="espe">Especialidades da casa</p>
+			<div class="grid-especialidades">
+				<div class="container">
+					<img src="img/comida1.jpeg" class="image">
+					<div class="overlay">
+						<div class="text">Hamburguer</div>
+					</div>
+				</div>
+				<div class="container">
+					<img src="img/comida2.jpeg" class="image">
+					<div class="overlay">
+						<div class="text">Peixe</div>
+					</div>
+				</div>
+				<div class="container">
+					<img src="img/comida3.jpeg" class="image">
+					<div class="overlay">
+						<div class="text">Frango</div>
+					</div>
+				</div>
+			</div>
+			<div class="grid-especialidades">
+				<div class="container">
+					<img src="img/comida4.jpeg" class="image">
+					<div class="overlay">
+						<div class="text">Waffles</div>
+					</div>
+				</div>
+				<div class="container">
+					<img src="img/comida5.jpeg" class="image">
+					<div class="overlay">
+						<div class="text">Cereal</div>
+					</div>
+				</div>
+				<div class="container">
+					<img src="img/comida6.jpeg" class="image">
+					<div class="overlay">
+						<div class="text">Macarrão</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section>	
+
+		<p id="parceiros"> Nossos Parceiros </p>
+		<div class="carousel">
+			<div> <img src="img/logo1.jpg"></div>
+			<div> <img src="img/logo2.png">< </div>
+			<div> <img src="img/logo3.jpg"> </div>
+			<div> <img src="img/logo3.jpg"> </div>
+			<div> <img src="img/logo3.jpg"> </div>
+			<div> <img src="img/logo3.jpg"> </div>
+		</div>
+		
+
+
+
+	</section>
+
+
+	<section>
+		<footer class="page-footer">
+			<div class="footer">
+				<div class="info">
+					<p><i class="fas fa-map-marker-alt"></i>Avenida Doutor Antônio Braga Filho, 819 - Porto Velho - Itajubá</p>
+					<p><i class="fas fa-phone"></i>(35) 3622-3306</p>
+					<p><i class="fab fa-facebook"></i>facebook.com/tocadocaboclo</p>
+				</div>
+
+				<div class="funcionamento">
+					<p class="func">FUNCIONAMENTO</p>
+
+					<p id="almoco">ALMOÇO</p>
+					<p id="footerd">De segunda a sexta, das 11:00 às 14:00<br>Aos Sábados, Domingos e Feriados, das 11:00 às 15:00</p>
+					<p id="almoco">NOITE</p>
+					<p id="footerm">Às sextas e sábados, das 19:00 às 01:30</p>
+				</div>
+			</div>            
+		</footer>		
+	</section>
+	
+
+
+
+	<footer>
+
+		<div class="footer-copyright">
+			<div class="desenvolvido">
+				<p> Desenvolvido por: </p>
+				<a href="https://byronsolutions.com" target="_blank"><img src=img/byron.png></a>
+			</div>
+		</div>
+
+	</footer>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$('.carousel').slick({
+				dots: true,
+				infinite: false,
+				speed: 300,
+				slidesToShow: 4,
+				slidesToScroll: 4,
+				responsive: [
+				{
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 3,
+						slidesToScroll: 3,
+						infinite: true,
+						dots: true
+					}
+				},
+				{
+					breakpoint: 600,
+					settings: {
+						slidesToShow: 2,
+						slidesToScroll: 2
+					}
+				},
+				{
+					breakpoint: 480,
+					settings: {
+						slidesToShow: 1,
+						slidesToScroll: 1
+					}
+				}
+				]
+			});
+
+		});
+	</script>
+</body>
